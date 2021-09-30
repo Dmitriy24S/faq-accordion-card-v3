@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans";
+  background-image: linear-gradient(
+    hsl(273, 75%, 66%) 0%,
+    hsl(240, 73%, 65%) 175%
+  );
+  min-height: 100vh;
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img-container {
+  z-index: 1;
+  padding-right: 30px;
+  position: absolute;
+  top: 21px;
+}
+.img {
+  background-image: url(images/illustration-woman-online-mobile.svg);
+  height: 196px;
+  width: 266px;
+  margin: 0 auto;
+}
+.img__shadow {
+  position: absolute;
+  background-image: url(images/bg-pattern-mobile.svg);
+  width: 240px;
+  height: 104px;
+  top: 108px;
+  left: 28px;
+}
+.card {
+  width: 330px;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  word-break: break-word;
+  border-radius: 20px;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+  margin: 3rem;
+  margin-top: 128px;
+  box-shadow: 0px 46.4px 80px -30.4px hsl(255deg 52% 35%);
+}
+.card h1 {
+  padding-top: 112px;
+  padding-bottom: 1rem;
+}
+.card article {
+  margin-top: 1rem;
+  text-align: left;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 1rem;
+}
+.active {
+  font-weight: 700;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.question__title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: -0.4px;
+}
+.question img {
+  width: 10px;
+  height: 7px;
+}
+.question__text {
+  margin-top: 0.5rem;
+  color: hsl(240, 6%, 50%);
+  font-size: 0.8rem;
+  padding-right: 1.5rem;
+}
+.attribution {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(255deg 52% 35%);
+}
+a:hover {
+  opacity: 0.8;
+}
