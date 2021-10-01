@@ -18,7 +18,16 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+a:hover {
+  opacity: 0.8;
+}
+/* svg */
 .img-container {
   z-index: 1;
   padding-right: 30px;
@@ -39,6 +48,7 @@ body {
   top: 108px;
   left: 28px;
 }
+/* card */
 .card {
   width: 330px;
   position: relative;
@@ -63,18 +73,13 @@ body {
   text-align: left;
   border-bottom: 1px solid hsl(240, 5%, 91%);
   padding-bottom: 1rem;
+  cursor: pointer;
 }
-.active {
-  font-weight: 700;
-}
-.question {
+/* questions */
+.question__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-}
-.question__title {
-  font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: -0.4px;
 }
@@ -88,6 +93,20 @@ body {
   font-size: 0.8rem;
   padding-right: 1.5rem;
 }
+/* show / hide text */
+.question__text {
+  display: none;
+}
+.show__text .question__text {
+  display: block;
+}
+.show__text .question__title {
+  font-weight: 700;
+}
+.show__text img {
+  transform: rotate(180deg);
+}
+/* footer */
 .attribution {
   margin-top: 1rem;
   font-size: 0.8rem;
@@ -95,7 +114,4 @@ body {
 }
 .attribution a {
   color: hsl(255deg 52% 35%);
-}
-a:hover {
-  opacity: 0.8;
 }
